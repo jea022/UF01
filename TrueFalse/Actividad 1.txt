@@ -1,0 +1,218 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\aguin> ls
+
+
+    Directorio: C:\Users\aguin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----     22/01/2023  11:40 p. m.                .afirma
+d-----       7/12/2020  4:23 a. m.                .android
+d-----     15/01/2021  12:23 a. m.                .Origin
+d-----     15/01/2021  12:23 a. m.                .QtWebEngineProcess
+d-r---      14/08/2020  1:01 p. m.                3D Objects
+d-----      22/10/2021  6:43 a. m.                Apple
+d-r---      16/10/2021  3:05 a. m.                Contacts
+d-r---      18/09/2023  6:46 p. m.                Desktop
+d-----      24/11/2020  5:03 a. m.                Documents
+d-r---      18/09/2023  7:02 p. m.                Downloads
+d-r---      16/10/2021  3:05 a. m.                Favorites
+d-r---      22/10/2021  5:30 a. m.                iCloudPhotos
+d-r---      16/10/2021  3:05 a. m.                Links
+d-r---      27/12/2022  3:00 a. m.                Music
+dar--l      18/09/2023  7:03 p. m.                OneDrive
+d-----      27/05/2022  7:38 a. m.                Pictures
+d-r---      16/10/2021  3:05 a. m.                Saved Games
+d-r---      16/10/2021  3:05 a. m.                Searches
+d-r---      18/09/2023  2:57 p. m.                Videos
+
+
+PS C:\Users\aguin> Desktop cd
+Desktop : El término 'Desktop' no se reconoce como nombre de un cmdlet, función, archivo de script o programa
+ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta
+es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ Desktop cd
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Desktop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\aguin> cd Desktop
+PS C:\Users\aguin\Desktop> mkdir MP03
+
+
+    Directorio: C:\Users\aguin\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:08 p. m.                MP03
+
+
+PS C:\Users\aguin\Desktop> cd MP03
+PS C:\Users\aguin\Desktop\MP03> mkdir UF01
+
+
+    Directorio: C:\Users\aguin\Desktop\MP03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:08 p. m.                UF01
+
+
+PS C:\Users\aguin\Desktop\MP03> cd..
+PS C:\Users\aguin\Desktop> cd..
+PS C:\Users\aguin> cd onedrive
+PS C:\Users\aguin\onedrive> ls
+
+
+    Directorio: C:\Users\aguin\onedrive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----l      24/11/2020  5:03 a. m.                Datos adjuntos
+d-r--l     12/09/2023  11:27 p. m.                Documentos
+d-r--l      18/09/2023  6:54 p. m.                Escritorio
+d-r--l     12/09/2023  11:27 p. m.                Imágenes
+-a---l      18/09/2023  6:12 p. m.           1164 Almacén personal.lnk
+
+
+PS C:\Users\aguin\onedrive> cd escritorio
+PS C:\Users\aguin\onedrive\escritorio> mkdir MP03
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:09 p. m.                MP03
+
+
+PS C:\Users\aguin\onedrive\escritorio> cd MP03
+PS C:\Users\aguin\onedrive\escritorio\MP03> mkdir UF01
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio\MP03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:09 p. m.                UF01
+
+
+PS C:\Users\aguin\onedrive\escritorio\MP03> ls
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio\MP03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:17 p. m.                UF01
+
+
+PS C:\Users\aguin\onedrive\escritorio\MP03> cd UF01
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> ls
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio\MP03\UF01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      18/09/2023  7:17 p. m.            110 HolaMon.java
+
+
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, mòn!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, mòn!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, Juan!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon
+error: Class names, 'HolaMon', are only accepted if annotation processing is explicitly requested
+1 error
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, Juan!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, Juan!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, Juan!Hola, Juan!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> javac HolaMon.java
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> java HolaMon
+Hola, Juan!
+Hola, Juan!
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01>
+PS C:\Users\aguin\onedrive\escritorio\MP03\UF01> cd..
+PS C:\Users\aguin\onedrive\escritorio\MP03> cd..
+PS C:\Users\aguin\onedrive\escritorio> cd mp03
+PS C:\Users\aguin\onedrive\escritorio\mp03> ls
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio\mp03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:20 p. m.                UF01
+
+
+PS C:\Users\aguin\onedrive\escritorio\mp03> cd UF01
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01> mkdir CorredInsensatos
+
+
+    Directorio: C:\Users\aguin\onedrive\escritorio\mp03\UF01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      18/09/2023  7:48 p. m.                CorredInsensatos
+
+
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01> cd .\CorredInsensatos\
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos.java
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> java CorredInsensatos
+Corred! Corred! Corred!
+AAAAA!
+Insensatos!
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos.java
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos>
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> java CorredInsensatos
+Corred!
+Corred!
+Corred!
+AAAAA!
+Insensatos!
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos.java
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> java CorredInsensatos
+Corred!Corred!Corred!AAAAA!
+Insensatos!
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos
+error: Class names, 'CorredInsensatos', are only accepted if annotation processing is explicitly requested
+1 error
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos.java
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> java CorredInsensatos
+Corred!Corred!Corred!
+AAAAA!
+Insensatos!
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> javac CorredInsensatos.java
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos> java CorredInsensatos
+Corred!Corred!Corred!
+JAAAAA!
+Insensatos!
+PS C:\Users\aguin\onedrive\escritorio\mp03\UF01\CorredInsensatos>
+
